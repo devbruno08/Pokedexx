@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Mochiy Pop One, Arial, Helvetica, sans-serif;
+}
+
+header#image{
+    display: flex;
+    justify-content: center;
+
+}
+
+img#header{
+    width: 100%;
+    height: 75vh;
+    border: solid black 5px;
+}
+
+body#background{
+    background-color: rgba(0, 89, 253, 0.874);
+    border: solid 2px black;
+    width: 100%;
+    
+}
+
+section#character-list{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+div.poke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 25%;
+
+}
+
+img.pokeImg{
+    width: 12vw;
+    cursor: pointer;
+    transition: all 1s;
+    border: 2px solid transparent;
+}
+
+img.pokeImg:hover{
+    transform: rotate(360deg);
+    border: 5px solid rgba(255, 255, 0, 0.834);
+    border-radius: 50%;
+}
+
+h2.name{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: black;
+    border: 1px solid black;
+    border-radius: .2rem;
+    background-color: rgb(157, 210, 78);
+    
+}
+
+section.modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    
+
+}
+
+div.modalCard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(106, 167, 195, 0.836);
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+img.image{
+    width: 25vw;
+    margin: 5vh;
+
+}
+
+section.inf{
+    font-size: 1rem;
+    text-transform: uppercase;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+}
+
+h2.pokeName{
+    margin: 5rem;
+}
+
+p.type{
+    margin: 2rem;
+}
+
+p.id{
+    margin: 1rem;
+}
+
+a.type{
+    text-align: center;
+    width: 10vw;
+}
+
+p.description{
+    margin: 2rem;
+}
+
+button.btn{
+    width: 5vw;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 1s;
+    
+}
+
+button.btn:hover{
+    transform: scale(1.1);
+
+}
+
+div#footer{
+    width: 100vw;
+    height: 25vh;
+    background-color: rgb(155, 34, 41);
+    border: solid 5px black;
+    text-align: center;
+    
+}
+
+
+button#more{
+    height: 5vh;
+    width: 15vw;
+    margin: 5vw 43vw;
+    border: 0;
+    background-color: rgb(157, 210, 78);
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#titleFooter{
+    padding-top: 9vh;
+}
+
+
+@media(max-width: 800px){
+
+    div.poke{
+        flex-wrap: wrap;
+        width: 45%;
+        margin: 0 auto;
+
+    }
+
+    img#header{
+        height: 40vh;
+    }
+
+};
+
+@media(max-width: 500px){
+    
+    img#header{
+        height: 30vh;
+    }
+
+};
